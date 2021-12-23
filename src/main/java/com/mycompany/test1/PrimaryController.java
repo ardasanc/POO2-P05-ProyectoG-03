@@ -18,6 +18,13 @@ public class PrimaryController {
     private void switchTolistaDuenio() throws IOException {
         App.setRoot("listaDuenio");
     }
-    
+    @FXML
+    private void switchToAdministrarMascota() throws IOException{
+        App.setRoot("AdministrarMascota");
+    }
+    @FXML
+    private void switchToCrearMascota() throws IOException{
+        App.setRoot("CrearMascota");
+    }
     
 }
