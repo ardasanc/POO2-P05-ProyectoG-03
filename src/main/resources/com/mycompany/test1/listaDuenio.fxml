@@ -79,7 +79,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="switchTolistaDuenio" alignment="CENTER" contentDisplay="CENTER" onAction="#switchToSecondary" text="Agregar Dueño" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="switchToSecondary" alignment="CENTER" contentDisplay="CENTER" onAction="#switchToSecondary" text="Agregar Dueño" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <Button fx:id="switchToPrimary" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToPrimary" text="Volver al menú principal" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
          </children>
       </GridPane>
