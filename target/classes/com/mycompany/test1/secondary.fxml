@@ -56,8 +56,8 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Cancelar" GridPane.columnIndex="1" />
-            <Button fx:id="secondaryButton" onAction="#switchToPrimary" prefHeight="39.0" prefWidth="73.0" text="Guardar" />
+            <Button mnemonicParsing="false" onAction="#switchTolistaDuenio" prefHeight="50.0" prefWidth="75.0" text="Cancelar" GridPane.columnIndex="1" />
+            <Button fx:id="secondaryButton" onAction="#switchTolistaDuenio" prefHeight="39.0" prefWidth="73.0" text="Guardar" />
          </children>
       </GridPane>
     </children>
