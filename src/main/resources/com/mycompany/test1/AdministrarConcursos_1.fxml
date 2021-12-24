@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.AdministrarConcursosController">
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.AdministrarConcurso">
    <children>
       <HBox layoutX="222.0" layoutY="267.0" prefHeight="100.0" prefWidth="200.0" />
       <BorderPane layoutX="100.0" layoutY="33.0" prefHeight="342.0" prefWidth="381.0">
@@ -21,13 +21,15 @@
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <Button fx:id="switchToCrearConcurso" mnemonicParsing="false" onAction="#switchToCrearConcurso" text="Crear Concurso" />
-                  <Button fx:id="switchToPrimary" mnemonicParsing="false" onAction="#switchToPrimary" text="Enviar invitaciones" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" text="Enviar invitaciones" GridPane.columnIndex="1" />
+                  <Button fx:id="switchToPrimary" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="25.0" prefWidth="169.0" text="Regresar al menú" GridPane.columnIndex="2" />
                </children>
             </GridPane>
          </bottom>
