@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 
 public class listaDuenio {
 
+    public static String rutaDuenio = "archivos\duenosP5.csv" ;
+    
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
@@ -13,9 +15,9 @@ public class listaDuenio {
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
     }
-    @FXML
-    private void switchTolistaDuenio() throws IOException {
-        App.setRoot("listaDuenio");
-    }
+     
     
+    private void LlenarLista(rutaDuenio){
+    
+        }
 }

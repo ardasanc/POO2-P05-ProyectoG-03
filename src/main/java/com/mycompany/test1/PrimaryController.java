@@ -1,19 +1,14 @@
 package com.mycompany.test1;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 
-public class PrimaryController {
+public class PrimaryController implements Initializable{
 
     
-    @FXML
-    private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
-    }
-    @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
-    }
     @FXML
     private void switchTolistaDuenio() throws IOException {
         App.setRoot("listaDuenio");
@@ -22,9 +17,10 @@ public class PrimaryController {
     private void switchToAdministrarMascota() throws IOException{
         App.setRoot("AdministrarMascota");
     }
-    @FXML
-    private void switchToCrearMascota() throws IOException{
-        App.setRoot("CrearMascota");
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

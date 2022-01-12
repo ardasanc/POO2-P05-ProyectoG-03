@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.PrimaryController">
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="350.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.PrimaryController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="274.0" text="Menú Principal" textAlignment="CENTER">
          <font>
@@ -29,7 +29,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="switchToAdministrarMascota" alignment="TOP_CENTER" contentDisplay="CENTER" onAction="#switchToAdministrarMascota" prefHeight="38.0" prefWidth="150.0" text="Dueños de mascotas" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Button fx:id="switchToAdministrarMascota" alignment="TOP_CENTER" contentDisplay="CENTER" onAction="#switchToAdministrarMascota" prefHeight="38.0" prefWidth="150.0" text="Mascotas" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
