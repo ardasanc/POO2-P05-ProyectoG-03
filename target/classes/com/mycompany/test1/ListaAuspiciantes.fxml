@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.listaDuenio">
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.ListaAuspiciantes">
    <children>
-      <Label prefHeight="38.0" prefWidth="274.0" text="Lista de Dueños de mascotas">
+      <Label prefHeight="38.0" prefWidth="204.0" text="Lista de Auspiciantes">
          <font>
             <Font name="Yu Gothic Medium" size="20.0" />
          </font></Label>
@@ -27,21 +27,19 @@
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="91.0" text="Código" textAlignment="CENTER" />
-                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Nombres" GridPane.columnIndex="1" />
-                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Apellidos" GridPane.columnIndex="2" />
-                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Dirección" GridPane.columnIndex="3" />
-                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Teléfono" GridPane.columnIndex="4" />
-                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Ciudad" GridPane.columnIndex="5" />
-                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Opciones" GridPane.columnIndex="7" />
-                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Email" GridPane.columnIndex="6" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Nombre" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Dirección" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Teléfono" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Ciudad" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Opciones" GridPane.columnIndex="6" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Email" GridPane.columnIndex="4" />
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="91.0" text="Página web" GridPane.columnIndex="5" />
                </children>
             </GridPane>
             <ScrollPane layoutY="39.0" prefHeight="123.0" prefWidth="667.0">
@@ -54,7 +52,6 @@
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
                     <rowConstraints>
@@ -79,7 +76,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="switchToSecondary" alignment="CENTER" contentDisplay="CENTER" onAction="#switchToSecondary" text="Agregar Dueño" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="switchToCrearAuspiciantes" alignment="CENTER" contentDisplay="CENTER" onAction="#switchToCrearAuspiciantes" text="Crear Auspiciante" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <Button fx:id="switchToPrimary" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToPrimary" text="Volver al menú principal" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
          </children>
       </GridPane>

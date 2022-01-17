@@ -3,7 +3,7 @@ package com.mycompany.test1;
 import java.io.IOException;
 import javafx.fxml.FXML;
 
-public class listaDuenio {
+public class ListaDuenio {
 
     public static String rutaDuenio = "archivos\duenosP5.csv" ;
     

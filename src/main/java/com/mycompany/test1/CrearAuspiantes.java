@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class SecondaryController {
+public class CrearAuspiantes {
     
     @FXML
     private Button cancel;
@@ -21,28 +21,13 @@ public class SecondaryController {
     private TextField txtfield2;
     private TextField txtfield3;
     private TextField txtfield4;
-    private TextField txtfield5;
-    @FXML
-    private ChoiceBox<?> listCiudad;
-    @FXML
-    private TextField txtield1;
-    @FXML
-    private TextField txtield2;
-    @FXML
-    private TextField txtield3;
-    @FXML
-    private TextField txtield4;
-    @FXML
-    private TextField txtield5;
-    @FXML
-    private TextField txtield0;
 
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
     }
     @FXML
-    private void switchTolistaDuenio() throws IOException {
-        App.setRoot("ListaDuenio");
+    private void switchTolistaAuspiciantes() throws IOException {
+        App.setRoot("ListaAuspiciantes");
     }
     
     private void llenarComboBox(List<Ciudad> listaCiudad) {
@@ -65,17 +50,16 @@ public class SecondaryController {
         cc.getItems().addAll(listaCiu);
        } 
     
-    private void GuardarDuenio(List<Duenio> listaDuenio){
+    private void GuardarDuenio(List<Auspiciante> listaAuspiciante){
         if(guardar.isPressed()){
             String txt0 = txtfield0.getText();
             String txt1 = txtfield1.getText();
             String txt2 = txtfield2.getText();
             String txt3 = txtfield3.getText();
             String txt4 = txtfield4.getText();
-            String txt5 = txtfield5.getText();
             Ciudad ciudad = cc.getValue();
-            Duenio d = new Duenio(txt0,txt1,txt2,txt3,txt4,ciudad,txt5);
-            listaDuenio.add(d);
+            Auspiciante a = new Auspiciante(txt0,txt1,txt2,ciudad,txt3,txt4);
+            listaAuspiciante.add(a);
         }
     }
     
