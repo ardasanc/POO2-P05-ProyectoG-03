@@ -25,8 +25,8 @@
             </HBox>
             <HBox prefHeight="84.0" prefWidth="601.0">
                <children>
-                  <Label text="Dueño:" translateX="70.0" translateY="20.0" />
-                  <ChoiceBox prefWidth="150.0" translateX="150.0" translateY="20.0" />
+                  <Label text="Provincia" translateX="70.0" translateY="20.0" />
+                  <ChoiceBox prefWidth="150.0" translateX="140.0" translateY="20.0" />
                </children>
             </HBox>
             <HBox prefHeight="68.0" prefWidth="600.0">

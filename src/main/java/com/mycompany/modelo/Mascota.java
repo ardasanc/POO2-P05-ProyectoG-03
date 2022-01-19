@@ -38,6 +38,16 @@ public class Mascota {
     public String getFoto(){return this.foto;}
     public Duenio getDuenio(){return this.duenio;}
     
+    //setters
+
+    public void setNombre(String nombre) {this.nombre = nombre;}
+    public void setPerroOGato(DirigidoA perroOGato) {this.perroOGato = perroOGato;}
+    public void setRaza(String raza) {this.raza = raza;}
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {this.fechaNacimiento = fechaNacimiento;}
+    public void setFoto(String foto) {this.foto = foto;}
+    public void setDuenio(Duenio duenio) {this.duenio = duenio;}
+    
+    
     //metodo para generar codigo
     public String generarCodigo(){
         //- se toma los tres primeros caracteres de los atributos de tipo String
