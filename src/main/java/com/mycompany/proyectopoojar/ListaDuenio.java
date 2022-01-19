@@ -24,7 +24,7 @@ public class ListaDuenio {
     @FXML
     private TableColumn<Duenio, String> colTelefono;
     @FXML
-    private TableColumn<Duenio, Ciudad> colCiudad;
+    private TableColumn<Duenio, String> colCiudad;
     @FXML
     private TableColumn<Duenio, String> colEmail;
     @FXML

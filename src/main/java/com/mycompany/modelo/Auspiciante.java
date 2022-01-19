@@ -5,6 +5,8 @@
  */
 package com.mycompany.modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author PC
@@ -49,4 +51,11 @@ public class Auspiciante extends Persona{
     @Override
     public String toString(){
         return  super.toString()+", " + this.webPage ;}//se sobreescribe el metodo toString de la clase padre
+    
+    public static ArrayList<Auspiciante> cargarAuspiciante(String ruta){
+        ArrayList<Auspiciante> auspiciantes = new ArrayList<>();
+        
+        return auspiciantes;
+    }
 }
+
