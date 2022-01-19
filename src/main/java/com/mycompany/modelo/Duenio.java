@@ -104,7 +104,8 @@ public class Duenio extends Persona{
                 for (Ciudad cc : ciudades){
                     if(cc.getNombre().equals(c)){Ciudad ciu = cc;
                                                 //crear objeto y agregar a la lista
-                                                 duenios.add(new Duenio(info[0],info[1],info[2],info[3],info[4],ciu,info[6]));}
+                                                 duenios.add(new Duenio(info[0],info[1],info[2],info[3],info[4],ciu,info[6]));
+                    }
                 }}
         }  catch (IOException ex) {
             System.out.println("Error al leer el archivo");

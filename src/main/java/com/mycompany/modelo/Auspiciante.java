@@ -48,5 +48,5 @@ public class Auspiciante extends Persona{
     
     @Override
     public String toString(){
-        return "Webpage del auspiciante: " + this.webPage +", " + super.toString();}//se sobreescribe el metodo toString de la clase padre
+        return  super.toString()+", " + this.webPage ;}//se sobreescribe el metodo toString de la clase padre
 }

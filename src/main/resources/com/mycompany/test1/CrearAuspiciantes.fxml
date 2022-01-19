@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="350.0" prefWidth="450.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.CrearAuspiante">
+<VBox alignment="CENTER" prefHeight="350.0" prefWidth="450.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectopoojar.CrearAuspiante">
     <children>
         <Label text="Agregar Auspiciante">
          <font>

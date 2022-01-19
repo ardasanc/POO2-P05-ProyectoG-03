@@ -5,21 +5,37 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 
 public class PrimaryController implements Initializable{
     
     
     @FXML
     private void switchTolistaDuenio() throws IOException {
-        App.setRoot("listaDuenio");
+        try {
+               App.setRoot("ListaDuenio");
+           } catch (IOException ex) {
+               Alert a=new Alert(Alert.AlertType.ERROR,"Error");
+                a.show();
+           }
     }
     @FXML
     private void switchToAdministrarMascota() throws IOException{
-        App.setRoot("AdministrarMascota");
+        try {
+               App.setRoot("AdministrarMascota");
+           } catch (IOException ex) {
+               Alert a=new Alert(Alert.AlertType.ERROR,"Error");
+                a.show();
+           }
     }
     @FXML
     private void switchToListaAuspiciantes() throws IOException{
-        App.setRoot("ListaAuspiciantes");
+        try {
+               App.setRoot("ListaAuspiciantes");
+           } catch (IOException ex) {
+               Alert a=new Alert(Alert.AlertType.ERROR,"Error");
+                a.show();
+           }
     }
 
     @Override

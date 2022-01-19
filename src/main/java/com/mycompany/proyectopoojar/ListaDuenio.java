@@ -4,6 +4,7 @@ import com.mycompany.modelo.Ciudad;
 import com.mycompany.modelo.Duenio;
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -31,11 +32,21 @@ public class ListaDuenio {
     
     @FXML
     private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
+        try {
+               App.setRoot("Primary");
+           } catch (IOException ex) {
+               Alert a=new Alert(Alert.AlertType.ERROR,"Error");
+                a.show();
+           }
     }
     @FXML
     private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
+        try {
+               App.setRoot("Secondary");
+           } catch (IOException ex) {
+               Alert a=new Alert(Alert.AlertType.ERROR,"Error");
+                a.show();
+           }
     }
      
     @FXML

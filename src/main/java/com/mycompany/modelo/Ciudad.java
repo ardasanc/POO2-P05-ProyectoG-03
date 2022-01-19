@@ -44,7 +44,7 @@ public class Ciudad {
     }
     @Override
     public String toString(){
-        return "Ciudad: " + this.nombre + ", Provincia: " + this.provincia;}
+        return this.nombre ;}
     
     public static ArrayList<Ciudad> cargarCuiudades(String ruta) {
         ArrayList<Ciudad> ciudades = new ArrayList<>();

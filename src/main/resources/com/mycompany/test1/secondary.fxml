@@ -3,7 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="350.0" prefWidth="450.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.SecondaryController">
+<VBox alignment="CENTER" prefHeight="350.0" prefWidth="450.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectopoojar.SecondaryController">
     <children>
         <Label id="titilo" stylesheets="@css/estilos.css" text="Agregar Dueño">
          <font>
@@ -40,7 +40,6 @@
             <Label id="label" alignment="TOP_CENTER" contentDisplay="CENTER" stylesheets="@css/estilos.css" text="Cuidad:" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
             <Label id="label" alignment="TOP_CENTER" contentDisplay="CENTER" stylesheets="@css/estilos.css" text="Email:" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
             <Accordion stylesheets="@css/estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <ChoiceBox fx:id="cc" maxHeight="-Infinity" prefHeight="15.0" prefWidth="288.0" stylesheets="@css/estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <TextField fx:id="txtield1" stylesheets="@css/estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField fx:id="txtield2" stylesheets="@css/estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="txtield3" stylesheets="@css/estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
@@ -48,6 +47,7 @@
             <TextField fx:id="txtield5" stylesheets="@css/estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Label id="label" alignment="TOP_CENTER" contentDisplay="CENTER" stylesheets="@css/estilos.css" text="Cédula:" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <TextField fx:id="txtield0" stylesheets="@css/estilos.css" GridPane.columnIndex="1" />
+            <ComboBox fx:id="cc" onAction="#llenarComboBox" prefHeight="26.0" prefWidth="287.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
       <GridPane>
@@ -60,7 +60,7 @@
         </rowConstraints>
          <children>
             <Button id="button" fx:id="cancel" mnemonicParsing="false" onAction="#switchTolistaDuenio" prefHeight="50.0" prefWidth="75.0" stylesheets="@css/estilos.css" text="Cancelar" GridPane.columnIndex="1" />
-            <Button id="button" fx:id="guardar" onAction="#switchTolistaDuenio" prefHeight="39.0" prefWidth="73.0" stylesheets="@css/estilos.css" text="Guardar" />
+            <Button id="button" fx:id="guardar" onAction="#GuardarDuenio" prefHeight="39.0" prefWidth="73.0" stylesheets="@css/estilos.css" text="Guardar" />
          </children>
       </GridPane>
     </children>

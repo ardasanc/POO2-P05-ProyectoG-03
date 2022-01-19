@@ -64,8 +64,8 @@ public abstract class Persona {
     }
     @Override
     public String toString(){
-    return "Nombre: " + this.nombre + ", Direccion: " + this.direccion + ", Telefono: " + this.telefono
-            + ", Ciudad: " + this.ciudad.toString() + ", Email" + this.email;}
+    return this.nombre + "," + this.direccion + "," + this.telefono
+            + "," + this.ciudad.toString() + "," + this.email;}
     
 }
 
