@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 public class PrimaryController implements Initializable{
-
+    
     
     @FXML
     private void switchTolistaDuenio() throws IOException {
@@ -16,6 +16,10 @@ public class PrimaryController implements Initializable{
     @FXML
     private void switchToAdministrarMascota() throws IOException{
         App.setRoot("AdministrarMascota");
+    }
+    @FXML
+    private void switchToListaAuspiciantes() throws IOException{
+        App.setRoot("ListaAuspiciantes");
     }
 
     @Override

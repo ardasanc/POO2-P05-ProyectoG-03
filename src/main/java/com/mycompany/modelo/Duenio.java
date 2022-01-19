@@ -5,10 +5,14 @@
  */
 package com.mycompany.modelo;
 
+import com.mycompany.proyectopoojar.App;
 import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -63,8 +67,12 @@ public class Duenio extends Persona{
     @Override
     public String toString(){
         return "Cedula del duenio: " + this.cedula + ", Apellido del duenio: " +this.apellido 
-                + ", "+super.toString();}//se sobreescribe el metodo toString de la clase padre
-
+                + ", "+super.toString();}//se sobreescribe el metodo toString de la clase padre//se sobreescribe el metodo toString de la clase padre
+    
+    public int compareTo(Duenio o) {
+        return super.compareTo(o); //To change body of generated methods, choose Tools | Templates.
+    }
+ 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -83,29 +91,24 @@ public class Duenio extends Persona{
         return true;
     }
     
-
     public static ArrayList<Duenio> cargarDuenios(String ruta) {
-        ArrayList<Duenio> Duenios = new ArrayList<>();
-        
-       
+        ArrayList<Duenio> duenios = new ArrayList<>();
         try(InputStream input = Duenio.class.getClassLoader().getResourceAsStream(ruta);
-                BufferedReader br = new BufferedReader(new InputStreamReader(input))) {
+            BufferedReader br = new BufferedReader(new InputStreamReader(input))) {
             String linea = null;
-            
+            br.readLine();//se lee la primera liena de encabezado
             while ((linea = br.readLine()) != null) //iterar mientras haya lineas
-            {
-                String[] info = linea.split(",");//separar los datos por coma
-                Ciudad c = info[5];
-                //crear objeto y agregar a la lista
-                Duenios.add(new Duenio(info[0],info[1],info[2],info[3],info[4],c,info[6]));
-                        
-            }
+            {   String[] info = linea.split(",");//separar los datos por coma
+                String c =  info[5];
+                ArrayList<Ciudad> ciudades = Ciudad.cargarCuiudades(App.pathCiudad);
+                for (Ciudad cc : ciudades){
+                    if(cc.getNombre().equals(c)){Ciudad ciu = cc;
+                                                //crear objeto y agregar a la lista
+                                                 duenios.add(new Duenio(info[0],info[1],info[2],info[3],info[4],ciu,info[6]));}
+                }}
         }  catch (IOException ex) {
             System.out.println("Error al leer el archivo");
         }  catch (Exception ex) {
-            System.out.println("Error " + ex.getMessage());
-        } 
-        
-       return Duenios;
-    }
-}
+            System.out.println("Error " + ex.getMessage()); } 
+       return duenios;
+    }}

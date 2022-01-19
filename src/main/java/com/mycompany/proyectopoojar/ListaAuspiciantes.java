@@ -3,10 +3,7 @@ package com.mycompany.proyectopoojar;
 import java.io.IOException;
 import javafx.fxml.FXML;
 
-public class ListaAuspiciantes {
-
-    public static String rutaDuenio = "archivos\duenosP5.csv" ;
-    
+public class ListaAuspiciantes {    
     @FXML
     private void switchToCrearAuspiciantes() throws IOException {
         App.setRoot("CrearAuspiciantes");
@@ -15,9 +12,5 @@ public class ListaAuspiciantes {
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
     }
-     
     
-    private void LlenarLista(String rutaAuspiciantes){
-    
-        }
 }
