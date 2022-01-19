@@ -25,9 +25,9 @@ public class DetalleMascota {
            }
     }
     public void llenarInfo(){
-    String n = CrearMascota.guardarNombre();
-        String s=String.valueOf(value.getStock());
-        lbl.setText(mascota.getNombre());
+    //String n = CrearMascota.guardarNombre();
+      //  String s=String.valueOf(value.getStock());
+        //lbl.setText(mascota.getNombre());
 }
 }
 

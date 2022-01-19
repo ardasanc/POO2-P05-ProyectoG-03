@@ -17,7 +17,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 /**
  *
  * @author PC
@@ -27,6 +28,7 @@ public class AgregarCiudad {
     private ComboBox<String> cM;
     private ArrayList<String> provincias = new ArrayList<>();
     private int indice=4;
+    private TableView tabla = new TableView();
 
     @FXML
     private void switchToAdministrarCiudad() throws IOException{

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test1.AgregarCiudad">
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectopoojar.AgregarCiudad">
    <children>
       <VBox prefHeight="402.0" prefWidth="601.0">
          <children>
@@ -20,18 +20,18 @@
             <HBox prefHeight="81.0" prefWidth="601.0">
                <children>
                   <Label text="Nombre:" translateX="70.0" translateY="30.0" />
-                  <TextField translateX="140.0" translateY="30.0" />
+                  <TextField fx:id="guardarNombre" onAction="#guardarNombre" translateX="140.0" translateY="30.0" />
                </children>
             </HBox>
             <HBox prefHeight="84.0" prefWidth="601.0">
                <children>
                   <Label text="Provincia" translateX="70.0" translateY="20.0" />
-                  <ChoiceBox prefWidth="150.0" translateX="140.0" translateY="20.0" />
+                  <ChoiceBox fx:id="llenarCombo" onDragDetected="#llenarCombo" prefWidth="150.0" translateX="140.0" translateY="20.0" />
                </children>
             </HBox>
             <HBox prefHeight="68.0" prefWidth="600.0">
                <children>
-                  <Button fx:id="switchToAdministrarCiudad" mnemonicParsing="false" onAction="#switchToAdministrarCiudad" text="Guardar" translateX="200.0" translateY="20.0" />
+                  <Button fx:id="guardar" mnemonicParsing="false" onAction="#guardar" text="Guardar" translateX="200.0" translateY="20.0" />
                   <Button fx:id="switchToAdministrarCiudad" mnemonicParsing="false" onAction="#switchToAdministrarCiudad" text="Cancelar" translateX="260.0" translateY="20.0" />
                </children>
             </HBox>
