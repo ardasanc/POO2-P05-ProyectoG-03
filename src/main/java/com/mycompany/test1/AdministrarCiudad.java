@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package com.mycompany.test1;
-
 import java.io.IOException;
 import javafx.fxml.FXML;
 
@@ -21,4 +20,5 @@ public class AdministrarCiudad {
     private void switchToAgregarCiudad() throws IOException{
         App.setRoot("AgregarCiudades");
     }
+    
 }
