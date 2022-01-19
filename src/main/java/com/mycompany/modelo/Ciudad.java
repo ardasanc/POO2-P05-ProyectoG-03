@@ -5,6 +5,12 @@
  */
 package com.mycompany.modelo;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 
 /**
  *
@@ -39,4 +45,29 @@ public class Ciudad {
     @Override
     public String toString(){
         return "Ciudad: " + this.nombre + ", Provincia: " + this.provincia;}
+    
+    public static ArrayList<Ciudad> cargarCuiudades(String ruta) {
+        ArrayList<Ciudad> ciudades = new ArrayList<>();
+        
+       
+        try(InputStream input = Ciudad.class.getClassLoader().getResourceAsStream(ruta);
+                BufferedReader br = new BufferedReader(new InputStreamReader(input))) {
+                String linea = null;
+                br.readLine();
+            
+            while ((linea = br.readLine()) != null) //iterar mientras haya lineas
+            {
+                String[] info = linea.split(",");//separar los datos por coma
+                //crear objeto y agregar a la lista
+                ciudades.add(new Ciudad(info[1],info[2]));
+                        
+            }
+        }  catch (IOException ex) {
+            System.out.println("Error al leer el archivo");
+        }  catch (Exception ex) {
+            System.out.println("Error " + ex.getMessage());
+        } 
+        
+       return ciudades;
+    }
 }

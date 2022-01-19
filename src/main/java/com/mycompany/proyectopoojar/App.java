@@ -14,6 +14,8 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    public static String pathCiudad = "com/mycompany/files/ciudades.csv";
+    public static String pathDuenio="com/mycompany/files/duenosP5.csv";
 
     @Override
     public void start(Stage stage) throws IOException {

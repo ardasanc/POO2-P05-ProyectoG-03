@@ -15,27 +15,20 @@ public class SecondaryController {
     private Button cancel;
     @FXML
     private Button guardar;
-    private ComboBox<Ciudad> cc;
+    @FXML
+    private ChoiceBox<Ciudad> cc;
+    @FXML
     private TextField txtfield0;
+    @FXML
     private TextField txtfield1;
+    @FXML
     private TextField txtfield2;
+    @FXML
     private TextField txtfield3;
+    @FXML
     private TextField txtfield4;
+    @FXML
     private TextField txtfield5;
-    @FXML
-    private ChoiceBox<?> listCiudad;
-    @FXML
-    private TextField txtield1;
-    @FXML
-    private TextField txtield2;
-    @FXML
-    private TextField txtield3;
-    @FXML
-    private TextField txtield4;
-    @FXML
-    private TextField txtield5;
-    @FXML
-    private TextField txtield0;
 
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
@@ -62,7 +55,7 @@ public class SecondaryController {
                                 .sorted()
                                 .collect(Collectors.toList());*/
         
-        cc.getItems().addAll(listaCiu);
+        //cc.getItems().addAll(listaCiu);
        } 
     
     private void GuardarDuenio(List<Duenio> listaDuenio){

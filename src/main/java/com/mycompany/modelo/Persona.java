@@ -58,6 +58,10 @@ public abstract class Persona {
         this.email = em;
     }
     
+    public int compareTo(Persona o) {
+        
+        return nombre.compareToIgnoreCase(o.nombre);
+    }
     @Override
     public String toString(){
     return "Nombre: " + this.nombre + ", Direccion: " + this.direccion + ", Telefono: " + this.telefono

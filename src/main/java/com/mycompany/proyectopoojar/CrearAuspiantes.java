@@ -47,7 +47,7 @@ public class CrearAuspiantes {
                                 .sorted()
                                 .collect(Collectors.toList());*/
         
-        cc.getItems().addAll(listaCiu);
+        //cc.getItems().addAll(listaCiu);
        } 
     
     private void GuardarDuenio(List<Auspiciante> listaAuspiciante){
